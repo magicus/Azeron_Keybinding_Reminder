@@ -330,7 +330,7 @@
                     { 
                         console.log(b.id);
                         let mItem = document.getElementById(`b${b.id}`); 
-                        if (mItem != null && b[buttonLblKey].length > 0){
+                        if (mItem != null && b[buttonLblKey] != null && b[buttonLblKey].length > 0){
                             mItem.classList.remove("unassigned");
                             mItem.classList.add("assigned");                            
                             mItem.textContent = b[buttonLblKey];
